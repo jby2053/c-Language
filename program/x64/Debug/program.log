@@ -1,2 +1,6 @@
 ﻿  soluton.c
-  program.vcxproj -> C:\Users\Administrator\Desktop\program\x64\Debug\program.exe
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(83,27): warning C4474: 'printf' : too many arguments passed for format string
+  C:\Users\Administrator\Desktop\c-Language\program\soluton.c(83,27):
+  placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  
+  program.vcxproj -> C:\Users\Administrator\Desktop\c-Language\program\x64\Debug\program.exe
