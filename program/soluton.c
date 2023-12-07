@@ -80,7 +80,7 @@ void main()
 	// 넣을 수 있으며, 서식 지정자의 순서는 왼쪽에서 부터 시작합니다.
 	printf("%c\n", grade);
 
-	printf("%c #d\n", grade, attack);
+	printf("%c %d\n", grade, attack);
 	
 	//"%c" : 하나의 문자를 표현하는 서식 지정자
 	//"%d" : 정수를 표현하는 서식 지정자
