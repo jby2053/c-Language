@@ -1,2 +1,3 @@
 ﻿  soluton.c
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(32,8): warning C4305: 'initializing': truncation from 'double' to 'float'
   program.vcxproj -> C:\Users\Administrator\Desktop\c-Language\program\x64\Debug\program.exe
