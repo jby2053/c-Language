@@ -1,3 +1,2 @@
 ﻿  soluton.c
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(50,22): error C2065: 'count': undeclared identifier
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(58,3): warning C4013: 'prinf' undefined; assuming extern returning int
+  program.vcxproj -> C:\Users\Administrator\Desktop\c-Language\program\x64\Debug\program.exe

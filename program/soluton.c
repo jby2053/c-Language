@@ -46,20 +46,19 @@ void main()
 	// ***
 	// ****
 	// *****
-
-	scanf_s("%d", &count);
-
 	int count = 0;
-
+	
+	scanf_s("%d", &count);
+		
 	for (int i = 0; i < count; i++)
 {
 	    for (int j = 0; j <= i; j++)
 	{
-		prinf("*");
+		printf("*");
 	}
 		// *
 		// **
-		prinf("\n");
+		printf("\n");
 }
 
 
