@@ -1,26 +1,2 @@
 ﻿  soluton.c
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(56,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-  C:\Users\Administrator\Desktop\c-Language\program\soluton.c(56,9):
-  consider using '%zd' in the format string
-  
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(57,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-  C:\Users\Administrator\Desktop\c-Language\program\soluton.c(57,12):
-  consider using '%zd' in the format string
-  
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(58,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-  C:\Users\Administrator\Desktop\c-Language\program\soluton.c(58,9):
-  consider using '%zd' in the format string
-  
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(59,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-  C:\Users\Administrator\Desktop\c-Language\program\soluton.c(59,9):
-  consider using '%zd' in the format string
-  
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(60,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-  C:\Users\Administrator\Desktop\c-Language\program\soluton.c(60,9):
-  consider using '%zd' in the format string
-  
-C:\Users\Administrator\Desktop\c-Language\program\soluton.c(61,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-  C:\Users\Administrator\Desktop\c-Language\program\soluton.c(61,9):
-  consider using '%zd' in the format string
-  
   program.vcxproj -> C:\Users\Administrator\Desktop\c-Language\program\x64\Debug\program.exe
