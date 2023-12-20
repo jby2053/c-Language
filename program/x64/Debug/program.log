@@ -1,2 +1,7 @@
 ﻿  soluton.c
-  program.vcxproj -> C:\Users\Administrator\Desktop\c-Language\program\x64\Debug\program.exe
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(116,8): error C2065: 'max': undeclared identifier
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(125,10): error C2065: 'max': undeclared identifier
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(125,22): error C2065: 'i': undeclared identifier
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(127,7): error C2065: 'max': undeclared identifier
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(127,19): error C2065: 'i': undeclared identifier
+C:\Users\Administrator\Desktop\c-Language\program\soluton.c(127,7): warning C4552: '<': result of expression not used
