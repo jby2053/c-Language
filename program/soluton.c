@@ -111,22 +111,26 @@ void main()
 #pragma region ÃÖ´ñ°ª°ú ÃÖ¼Ú°ª
 
   // [10] [35] [50] [2] [5]
-  int dataList[ ] = { 10,35,50,2,5 };
+  int dataList[ ] = { 10, 35, 50, 2, 5 };
 
-   max = dataList[0];
+  int max = 0;
 
   // ÃÖ´ñ°ª : 50 
   // ÃÖ¼Ú°ª : 2
 
   int arratsize = sizeof(dataList) / sizeof(int);
+  
+  max = dataList[0];
 
-  for (int i = 0; i < arratsize; i++);
+  for (int i = 0; i < arratsize; i++)
  {
 	if (max < dataList[i])
 	{
-		max < dataList[i];
+		max = dataList[i];
 	}
  }
+
+  printf("dataListÀÇ ÃÖ´ñ°ª : %d\n", max);
 
 #pragma endregion
 
