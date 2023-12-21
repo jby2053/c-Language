@@ -1,142 +1,96 @@
 #include <stdio.h>
 
+void Function()
+{
+	printf("Function");
+}
+
+int Add(int x, int y)
+{
+	return x + y;
+}
+
+int Minus(int x, int y)
+{
+	return x - y;
+}
+	
+int Multple(int x, int y)
+{
+	return x * y;
+}
+
+int Divide(int x, int y)
+{
+	return x / y;
+}
+void swap(int a, int b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+
+    // 함수를 호출할 때 변수의 값을 인수로 전달하게 되면
+    // 함수의 매개 변수에 변수의 복사된 값이 전달되기 때문에
+    // 인수로 전달할 변수는 함수 내에서 일어난 연산에 대해
+    // 영향을 받지 안습니다.
+}
+
 void main()
 {
-#pragma region 배열
-	// 같은 자료형의 변수들로 이루어진 유한 집합니다.
-	
-	//int Baeyoung[5];
 
-	//// 배열의 경우 첫 번째 원소는 0부터 시작합니다.
+   	#pragma region 함수
 
-	//Baeyoung[0] = 100;
-	//Baeyoung[1] = 200;
-	//Baeyoung[2] = 300;
-	//	
-	//
-	//
+   		// 하나의 특별한 목적의 작업을 수행하기
+   		// 위해 독립적으로 설계된 코드의 집합입니다.
 
-	//for (int i = 0; i < 5; i++)
-	//{
-	//	Baeyoung[i] = (i + 1) * 100;
+   		//Function();
 
-	//	printf("Baeyoung[%d]의 값 : %d\n", i, Baeyoung[i]);
-	//}
+   		
+        // 함수가 호출될 때 함수가 호출되는 시작 시점으로
+        // 넘어가게 됩니다.
 
-	//// 배열은 원하는 원소에 원하는 값을 저장할 수 있으며,
-	//// 배열의 크기는 컴파일이 되는 시점부터 고정된 메모리
-	//// 공간을 가지게 됩니다.
+#pragma region 매개 변수
+        // 함수의 정의에서 전달받은 인수를 함수 내부로 전달하기
+   	    // 위해 사용하는 변수입니다.
 
-	//int list[] = { 10,20,30,45 }; // 16byte
+   		//printf("Add함수의 결과 : %d\n", Add(10, 20));
+   		//printf("Minus함수의 결과 : %d\n", Minus(10, 20));
+   		//
+   		//// 매개 변수는 함수 내부에서만 연산이 이루어지며, 함수가
+   		//// 종료되면 메모리에서 사라지는 특징을 가지고 있습니다.
 
-	//int size = sizeof(list) / sizeof(int);
+   		//printf("Multpl함수의 결과 : %d\n", Multple(5.75f,7.65));
 
-	//printf("배열의 사이즈 %d\n", size);
+   		
 
-	// 배열의 크기는 생략할 수 있으며, 초기화 목록에서
-	// 설정한 요소에 따라 배열의 크기가 결정됩니다.
+#pragma endregion
 
-	//int* ptr = NULL;
+#pragma region 인수
+        // 함수가 호출될 때 매개변수에 실제로 전달되는 값입니다.
 
-	//int intlist[5] = { 1, 2, 3, 4,5 };
+        // A(10) <-> B(20)
 
-	//ptr = intlist;
+        // 인수의 경우 함수에 있는 매개변수의 수에 따라 전달할 수있는
+        // 인수의 수가 결정되며, 값을 전달하는 인수와 값을 전달받는
+        // 매개변수의 자료형이 서로 일치해야 합니다.
 
+     
+    
+        int a = 1000;
+        int b = 2000;
+        int temp = 0;
 
-	//printf("ptr 변수의 값 : %p\n", ptr);
-	//printf("intlist 배열의 시작 주소 : %p\n", intlist);
-
-	//ptr = ptr + 1;
-	//*ptr = 99;
-
-	//printf("ptr 변수의 값 : %p\n", ptr);
-	//printf("ptr 변수가 가리키는 값 : %d\n", *ptr);
-	//printf("intlist 배열[1]의 시작 주소 : %p\n", &intlist[1]);
-
-	//// 배열은 연속적인 메모리 공간을 가지며, 배열의 이름은 배열의
-	//// 시작 주소를 의미합니다.
-
-
-#pragma region 문자열
-	// 연속적인 메모리 공간에 저장된 문자
-	// 변수의 집합입니다.
-
-	//const char* string = "Computer";
-
-	//// *string[0] = 'A'; (ERROR)
-
-	//// %s : (문자열을 출력하는 서식 지정자)
-	//printf("string 변수의 값 : %s\n", string);
-
-	//// 문자열의 경우 포인터를 이용하여 문자열 상수를
-	//// 가리키도록 할 수 있으며, 문자열 상수는 데이터 영역
-	//// 의 일기 전용 공간에 저장되기 때문에 문자열의
-	//// 값을 변경할 수 없습니다.
-
-	//string = "Hello";
-	//
-	//printf("string 변수의 값 : %s\n", string);
-	// 문자열은 공백도 함께 메모리 공간에 포함하여
-	// 크기가 결정되며, 마지막에 문자열의 끝을 알려주는
-	// 제어 문자가 추가됩니다.
-
-
-	//// [A][l][i][s][t][a][r][\0]
-
-	////char *const name
-	//char name[10] = { "Alistar" };
-
-	//printf("name 변수의 값 : %s\n",name);
-
-	//name[4] = '\0';
-
-	//// 문자열을 저장하게 되면 맨 마지막에 무효의
-	//// 문자까지 메모리 공간에 저장됩니다.
-	//
-	//printf("name 변수의 값 : %s\n", name);
-
-	//// 문자열의 경우 서로 연속적인 메모리 공간으로
-	//// 연결되어 있지만, 문자 배열 사이에 무효의 문자를
-	//// 넣게 되면 무효의 문자까지만 문자열을 출력합니다.
-
-
-
-
-
-
+        temp = b;
+        b = a;
+        a = temp;
+       
+        printf("a 변수의 값 : %d\n", a);
+        printf("b 변수의 값 : %d\n", b);
 
 #pragma endregion
 
 
-#pragma region 최댓값과 최솟값
-
-  // [10] [35] [50] [2] [5]
-  int dataList[ ] = { 10, 35, 50, 2, 5 };
-
-  int max = 0;
-
-  // 최댓값 : 50 
-  // 최솟값 : 2
-
-  int arratsize = sizeof(dataList) / sizeof(int);
-  
-  max = dataList[0];
-
-  for (int i = 0; i < arratsize; i++)
- {
-	if (max < dataList[i])
-	{
-		max = dataList[i];
-	}
- }
-
-  printf("dataList의 최댓값 : %d\n", max);
-
 #pragma endregion
+   	}
 
-
-
-#pragma endregion
-
-
-}
